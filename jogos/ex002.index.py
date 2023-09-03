@@ -7,8 +7,12 @@ numero_secreto = 7
 
 for rodada in range(1, total_de_tentativas + 1):
     print("tentativa {} de {}".format(rodada, total_de_tentativas))
-    chute = int(input("Digite um numero: "))
+    chute = int(input("Digite um numero entre 1 a 30: "))
     print("Você digitou", chute)
+
+    if(chute < 1 or chute > 30):
+        print("Você deve digitar um numero entre 1 a 30!")
+        continue 
 
     acertou = numero_secreto == chute
     menor = chute < numero_secreto
