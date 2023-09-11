@@ -3,3 +3,8 @@ maca
 morango
 melancia
 manga
+Tomate
+abacaxi
+melao
+mamao
+laranja
